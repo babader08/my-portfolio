@@ -37,7 +37,7 @@ const Accueil = () => {
           </p>
         </div>
 
-        <div className="animate-fadeInUp w-84 [animation-delay:400ms] md:w-full md:px-2 lg:w-full lg:px-2">
+        <div className="animate-fadeInUp lg-80 w-84 [animation-delay:400ms] md:w-full md:px-2 lg:px-2">
           <div className="mt-2 flex w-full flex-wrap items-center justify-start gap-2 overflow-hidden lg:mt-4">
             {[
               "JavaScript",
@@ -50,7 +50,7 @@ const Accueil = () => {
             ].map((tech) => (
               <span
                 key={tech}
-                className="inline-block rounded-full border border-purple-500/20 bg-purple-500/5 px-3 py-1 text-[11px] font-semibold whitespace-nowrap text-purple-300 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/50 hover:bg-purple-500/10 hover:text-white sm:text-xs"
+                className="inline-block rounded-full border border-purple-500/20 bg-purple-500/5 px-3 py-1 text-[11px] font-semibold whitespace-nowrap text-purple-300 backdrop-blur-sm transition-all duration-300 hover:border-purple-500/50 hover:bg-purple-500/10 hover:text-white sm:text-xs lg:py-2"
               >
                 {tech}
               </span>
