@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bgColor: #11071f;
+  --color-bgHeader: #1a0b2e;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #11071f;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* "Si le body contient un élément avec la classe .overlay-noire, alors cache le scroll" */
+  html:has(.overlay-noire),
+  body:has(.overlay-noire) {
+    overflow: hidden !important;
+    touch-action: none;
+    position: relative;
+    height: 100vh;
+  }
+}
+
+@layer utilities {
+  .bord-r {
+    border: 2px solid red;
+  }
+
+  .bord-w {
+    border: 2px solid white;
+  }
+
+  .fontName {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-float {
+    animation: float 2s ease-in-out infinite;
+  }
+
+  .animate-gradient-shift {
+    background-size: 200% 200%;
+    animation: gradient-shift 6s ease infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 8s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+
+  @keyframes text-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes breathe {
+    0%,
+    100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.5;
+    }
+  }
+}
+
+@import "tailwindcss";
