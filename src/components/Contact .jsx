@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -53,16 +54,29 @@ const Contact = () => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Tu brancheras EmailJS ici
     setStatus("loading");
-    console.log("Form data:", form);
 
-    setTimeout(() => {
+    try {
+      await emailjs.send(
+        "service_6c56dea",
+        "template_4b3bh7h",
+        {
+          from_name: form.name,
+          user_email: form.email,
+          subject: `Message de ${form.name}`,
+          message: form.message,
+        },
+        "CD7y-8jxsnceZNtnG",
+      );
+
       setStatus("success");
       setForm({ name: "", email: "", message: "" });
-    }, 1500);
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setStatus("error");
+    }
   };
 
   const inputClass =
@@ -80,7 +94,6 @@ const Contact = () => {
         Contact
       </p>
       <div className="flex flex-col gap-12 md:flex-row md:items-start md:justify-between">
-        {/* ── Colonne droite — formulaire ── */}
         <div className="w-full md:max-w-md">
           {status === "success" ? (
             <div className="flex h-full flex-col items-center justify-center gap-4 rounded-2xl border border-purple-500/20 bg-purple-900/10 p-10 text-center">
@@ -103,11 +116,19 @@ const Contact = () => {
           ) : (
             <form
               onSubmit={handleSubmit}
-              className="flex flex-col gap-4 rounded-2xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm"
+              className="flex flex-col gap-4 rounded-2xl border border-white/5 bg-white/3 p-6 backdrop-blur-sm"
             >
               <h3 className="fontName text-lg font-semibold text-white">
                 Envoyer un message
               </h3>
+
+              {/* Erreur */}
+              {status === "error" && (
+                <div className="rounded-xl border border-red-500/20 bg-red-900/10 px-4 py-3 text-sm text-red-400">
+                  Une erreur est survenue. Réessaie ou contacte-moi directement
+                  par email.
+                </div>
+              )}
 
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-medium text-gray-400">
@@ -124,7 +145,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Email */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-medium text-gray-400">
                   Email
@@ -140,7 +160,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Message */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-medium text-gray-400">
                   Message
@@ -156,7 +175,6 @@ const Contact = () => {
                 />
               </div>
 
-              {/* Submit */}
               <button
                 type="submit"
                 disabled={status === "loading"}
@@ -173,7 +191,6 @@ const Contact = () => {
           )}
         </div>
 
-        {/* ── Colonne gauche — texte & socials ── */}
         <div className="flex max-w-sm flex-col gap-7">
           <h2 className="fontName text-4xl leading-tight font-bold text-white md:text-5xl">
             Bugs aujourd'hui,{" "}
@@ -191,10 +208,9 @@ const Contact = () => {
             className="group flex w-fit items-center gap-2 text-sm font-medium text-purple-300 transition-colors duration-300 hover:text-white"
           >
             <span className="h-px w-4 bg-purple-500 transition-all duration-300 group-hover:w-6" />
-            babamboup697@gmail.com
+            contact@babsdev.tech
           </a>
 
-          {/* Socials */}
           <div className="flex items-center gap-5">
             {socials.map(({ label, href, icon }) => (
               <a
@@ -210,7 +226,6 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Copyright */}
           <div className="flex flex-col gap-1 text-gray-600">
             <p className="fontName text-2xl font-bold text-white/10 select-none">
               BabsDev<span className="text-purple-500/20">.</span>

@@ -43,7 +43,6 @@ const Accueil = () => {
               "JavaScript",
               "Tailwind CSS",
               "React.js",
-              "Redux Toolkit",
               "TanStack Query",
               "Golang",
               "PostgreSQL",
