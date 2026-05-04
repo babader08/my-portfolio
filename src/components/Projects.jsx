@@ -1,8 +1,22 @@
 import ProjectCard from "../components/Projectcard";
 import photoMeteo from "../assets/photoMeteo.webp";
 import photoMesri from "../assets/photoMesri.webp";
+import photoGestion from "../assets/photoGestion.webp";
 
 const projects = [
+  {
+    image: photoGestion,
+    imageAlt: "Capture du second projet",
+    label: "Featured Project",
+    title: "App Gestion Stock",
+    description:
+      "Une plateforme Full-stack de gestion de stock permettant un suivi en temps réel des produits. Développée avec un backend robuste en Go et une base de données PostgreSQL, l'application garantit la persistance des données via une interface moderne et responsive.",
+    tags: ["React", "TanStack-Query", "Golang", "Postgres SQL", "Docker"],
+    liveUrl: "https://app-gestion-stock-opal.vercel.app/",
+    githubUrl: "https://github.com/babader08/app-gestion-stock",
+    reversed: false,
+  },
+
   {
     image: photoMeteo,
     imageAlt: "Capture de l'application météo",
@@ -12,7 +26,8 @@ const projects = [
       "Une application météo moderne qui affiche les prévisions en temps réel selon la localisation de l'utilisateur. Données récupérées via une API externe, interface claire et responsive.",
     tags: ["React", "API REST", "Tailwind-CSS", "Vite"],
     liveUrl: "https://app-meteo-gamma.vercel.app/",
-    reversed: false,
+    githubUrl: "https://github.com/babader08/app-meteo",
+    reversed: true,
   },
   {
     image: photoMesri,
@@ -23,7 +38,8 @@ const projects = [
       "Site institutionnel statique pour le Ministère de l’Enseignement Supérieur : pages d’information et ressources. Défis : intégration responsive, optimisation des performances et accessibilité pour tous les utilisateurs.",
     tags: ["React", "Tailwind-CSS", "framer-motion"],
     liveUrl: "https://app-mesri.vercel.app/",
-    reversed: true,
+    githubUrl: "https://github.com/babader08/app-mesri",
+    reversed: false,
   },
 ];
 

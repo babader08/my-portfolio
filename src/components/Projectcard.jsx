@@ -6,6 +6,7 @@ const ProjectCard = ({
   description,
   tags = [],
   liveUrl = "#",
+  githubUrl = "#",
   reversed = false,
 }) => {
   return (
@@ -66,18 +67,20 @@ const ProjectCard = ({
         )}
 
         <div
-          className={`mt-1 flex items-center gap-4 ${reversed ? "flex-row-reverse" : ""}`}
+          className={`mt-2 flex items-center gap-4 ${
+            reversed ? "flex-row-reverse" : ""
+          }`}
         >
           <a
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 transition-colors duration-200 hover:text-white"
             aria-label="Live demo"
+            className="group flex items-center justify-center rounded-lg bg-white/5 p-2 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-blue-500/20"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-4 w-4 text-gray-300 transition-colors duration-300 group-hover:text-blue-400"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -88,6 +91,23 @@ const ProjectCard = ({
                 strokeLinejoin="round"
                 d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
               />
+            </svg>
+          </a>
+
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub repo"
+            className="group flex items-center justify-center rounded-lg bg-white/5 p-2 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:bg-gray-800/40"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              className="h-4 w-4 text-gray-300 transition-colors duration-300 group-hover:text-blue-400"
+              fill="currentColor"
+            >
+              <path d="M12 0.5C5.73 0.5 0.75 5.48 0.75 11.75c0 5.02 3.26 9.27 7.79 10.77.57.1.78-.25.78-.56 0-.27-.01-1.17-.02-2.12-3.17.69-3.84-1.53-3.84-1.53-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.53-.29-5.2-1.27-5.2-5.66 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.57.23 2.73.11 3.02.73.8 1.18 1.83 1.18 3.08 0 4.4-2.67 5.36-5.21 5.65.41.36.77 1.09.77 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.67.79.56 4.52-1.5 7.78-5.75 7.78-10.77C23.25 5.48 18.27.5 12 .5z" />
             </svg>
           </a>
         </div>
