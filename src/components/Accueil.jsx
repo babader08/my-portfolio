@@ -2,7 +2,10 @@ import photoProfile from "../assets/photoProfile.webp";
 
 const Accueil = () => {
   return (
-    <section className="relative mx-auto flex min-h-[90vh] max-w-6xl items-center overflow-hidden px-6 md:px-4">
+    <section
+      id="home"
+      className="relative mx-auto flex min-h-[90vh] max-w-6xl items-center overflow-hidden px-6 md:px-4"
+    >
       <div className="relative z-10 flex flex-1 flex-col justify-center gap-6 md:mt-0 lg:mt-0">
         <div className="animate-fadeInUp flex w-fit items-center gap-2">
           <span className="relative flex h-2 w-2">

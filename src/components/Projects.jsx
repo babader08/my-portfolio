@@ -45,7 +45,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-20 md:px-10">
+    <section id="project" className="mx-auto max-w-6xl px-6 py-20 md:px-10">
       <div className="mb-8">
         <p className="mb-3 text-xs font-medium tracking-[0.3em] text-purple-400/70 uppercase">
           Réalisations

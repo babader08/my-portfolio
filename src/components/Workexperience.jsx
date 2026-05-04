@@ -41,7 +41,10 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <section className="mx-auto -mt-10 max-w-6xl px-6 py-5 md:mt-0 md:px-10 lg:mt-0">
+    <section
+      id="experience"
+      className="mx-auto -mt-10 max-w-6xl px-6 py-5 md:mt-0 md:px-10 lg:mt-0"
+    >
       <div className="mb-12">
         <p className="mb-3 text-xs font-medium tracking-[0.3em] text-purple-400/70 uppercase">
           Parcours
