@@ -204,7 +204,7 @@ const Contact = () => {
           </p>
 
           <a
-            href="mailto:babamboup697@gmail.com"
+            href="mailto:contact@babsdev.tech"
             className="group flex w-fit items-center gap-2 text-sm font-medium text-purple-300 transition-colors duration-300 hover:text-white"
           >
             <span className="h-px w-4 bg-purple-500 transition-all duration-300 group-hover:w-6" />
