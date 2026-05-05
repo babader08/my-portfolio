@@ -5,9 +5,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
+    { name: "Accueil", href: "#home" },
     { name: "Experience", href: "#experience" },
-    { name: "Project", href: "#project" },
+    { name: "Projet", href: "#project" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -37,12 +37,12 @@ const Header = () => {
         </nav>
 
         <a
-          href="https://github.com/"
+          href="https://github.com/babader08?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm font-medium text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-black md:inline-flex"
+          className="hidden rounded-full border border-white/10 bg-white/5 px-7 py-2 text-md font-medium text-white transition-all duration-300 hover:border-white hover:bg-white hover:text-black md:inline-flex"
         >
-          Download CV
+          Github
         </a>
 
         <button
@@ -108,7 +108,7 @@ const Header = () => {
             rel="noopener noreferrer"
             className="rounded-xl border border-purple-500/30 py-3 text-center text-sm font-semibold text-purple-300 transition-colors hover:bg-purple-500/10"
           >
-            GitHub
+            Github
           </a>
         </nav>
       </div>

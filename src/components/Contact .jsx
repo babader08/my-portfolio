@@ -193,14 +193,14 @@ const Contact = () => {
 
         <div className="flex max-w-sm flex-col gap-7">
           <h2 className="fontName text-4xl leading-tight font-bold text-white md:text-5xl">
-            Bugs aujourd'hui,{" "}
+            Bug aujourd'hui,{" "}
             <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               skills demain.
             </span>
           </h2>
 
           <p className="max-w-md text-base leading-relaxed text-gray-400">
-            You don't need to know everything. You need to know how to learn.
+            Le seul moyen d’apprendre un nouveau langage de programmation est d’écrire des programmes avec.
           </p>
 
           <a

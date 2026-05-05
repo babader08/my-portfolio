@@ -4,7 +4,7 @@ const experiences = [
   {
     emoji: "🚀",
     title: "Alternance à Volkeno",
-    company: "Projet Stage — Dakar",
+    company: "Stage — Dakar",
     period: "2025 — 2026",
     description:
       "Développement de fonctionnalités back-end et front-end sur des projets confiés. Mise en place d'une API REST et optimisation des performances côté client.",
@@ -30,7 +30,7 @@ const experiences = [
   },
   {
     emoji: "👨‍💻",
-    title: "Travail de Groupe",
+    title: "site Restaurant",
     company: "UNCHK",
     period: "2024 — 2025",
     description:
@@ -51,9 +51,9 @@ const WorkExperience = () => {
         </p>
         <div className="flex items-end gap-4">
           <h2 className="fontName text-4xl leading-tight font-bold text-white md:text-5xl">
-            Work{" "}
+            Experience{" "}
             <span className="bg-linear-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Experience
+              de travail
             </span>
           </h2>
           <div className="mb-2 hidden h-px flex-1 bg-linear-to-r from-purple-500/40 to-transparent sm:block" />
