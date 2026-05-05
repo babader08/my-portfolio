@@ -8,7 +8,7 @@ const Contact = () => {
   const socials = [
     {
       label: "GitHub",
-      href: "https://github.com/babader08",
+      href: "https://github.com/babader08?tab=repositories",
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
