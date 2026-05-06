@@ -1,4 +1,4 @@
-import photoProfile from "../assets/photoProfile.webp";
+import photoProfile from "../assets/myPhoto.jpg";
 
 const Accueil = () => {
   return (
