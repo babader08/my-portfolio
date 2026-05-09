@@ -1,18 +1,36 @@
-# React + Vite
+# 🚀 Portfolio Professionnel | Développeur Logiciel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur le dépôt de mon portfolio personnel. Ce projet a été conçu pour présenter mes réalisations techniques, mes compétences en développement full-stack et ma méthodologie de travail.
 
-Currently, two official plugins are available:
+L'objectif est de proposer une expérience fluide et performante pour mettre en avant des solutions logicielles concrètes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Stack Technique
 
-## React Compiler
+Le projet est construit avec une architecture moderne axée sur la performance et la maintenabilité :
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+*   **Frontend** : [React.js](https://reactjs.org/) (Hooks, Composition de composants)
+*   **Stylisation** : [Tailwind CSS](https://tailwindcss.com/) (Design responsive et utilitaire)
+*   **Outils de build** : Vite (pour un développement rapide et optimisé)
+*   **Déploiement** : [Vercel](https://vercel.com/) (CI/CD automatique)
 
-Note: This will impact Vite dev & build performances.
+## ✨ Fonctionnalités Clés
 
-## Expanding the ESLint configuration
+- **Interface Responsive** : Optimisée pour mobile, tablette et desktop.
+- **Showcase de Projets** : Présentation détaillée de mes applications (Backend & Full-stack).
+- **Performance** : Score Lighthouse optimisé pour un chargement rapide.
+- **Section Contact** : Formulaire et liens directs vers mes réseaux professionnels.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Projets Mis en Avant
+
+Dans ce portfolio, vous trouverez notamment :
+- **Application de Gestion de Stock** : Une solution robuste utilisant une architecture `handler-service-repository`.
+- **Systèmes Backend** : Implémentations performantes avec focus sur la concurrence et l'optimisation des API.
+- **Intégrations Database** : Travail approfondi sur la modélisation et l'intégration de bases de données relationnelles.
+
+## 🚀 Installation Locale
+
+Si vous souhaitez explorer le code ou lancer le projet localement :
+
+1. Cloner le projet :
+   ```bash
+   git clone [https://github.com/babader08/my-portfolio.git](https://github.com/babader08/my-portfolio.git)
