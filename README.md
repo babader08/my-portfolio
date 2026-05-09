@@ -23,14 +23,7 @@ Le projet est construit avec une architecture moderne axée sur la performance e
 ## 📂 Projets Mis en Avant
 
 Dans ce portfolio, vous trouverez notamment :
-- **Application de Gestion de Stock** : Une solution robuste utilisant une architecture `handler-service-repository`.
+- **Application de Gestion de Stock** : Une solution robuste utilisant une architecture solide.
 - **Systèmes Backend** : Implémentations performantes avec focus sur la concurrence et l'optimisation des API.
 - **Intégrations Database** : Travail approfondi sur la modélisation et l'intégration de bases de données relationnelles.
 
-## 🚀 Installation Locale
-
-Si vous souhaitez explorer le code ou lancer le projet localement :
-
-1. Cloner le projet :
-   ```bash
-   git clone [https://github.com/babader08/my-portfolio.git](https://github.com/babader08/my-portfolio.git)
